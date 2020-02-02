@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+      "allowJs": true, // 자바스크립트 파일 컴파일 허용 여부
+      "allowSyntheticDefaultImports": true, // export default 를 export 한 값들을 가지는 객체로 설정
+      "esModuleInterop": true,  //import default를 사용 가능하게 설정.
+      "isolatedModules": true, //각 파일을 별도의 모듈로 변환
+      "jsx": "react",
+      "lib": ["es6"],
+      "moduleResolution": "node",
+      "noEmit": true, //출력을 표시하지 않음
+      "strict": true,
+      "target": "esnext", //프로젝트 Import root path
+      "baseUrl": "./src",
+      "paths": {
+        "~/*": ["*"]
+      }
+    },
+    "exclude": [
+      "node_modules",
+      "babel.config.js",
+      "metro.config.js",
+      "jest.config.js"
+    ]
+  }
+  
